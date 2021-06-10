@@ -8,13 +8,13 @@ const chalk = require('chalk')
 module.exports = () => {
  co(function *() {
     // 处理用户输入
-      let tplName = yield prompt('请输入脚手架名称: ')
+      let tplName = yield prompt('请输入模板名称: ')
       let projectName = yield prompt('请输入项目名称: ')
       let gitUrl
       let branch
 
     if (!config.tpl[tplName]) {
-        console.log(chalk.red('\n 脚手架不存在！'))
+        console.log(chalk.red('\n 模板不存在！'))
         process.exit()
     }
     gitUrl = config.tpl[tplName].url

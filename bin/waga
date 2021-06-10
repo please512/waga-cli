@@ -1,6 +1,6 @@
 #!/usr/bin/env node --harmony
 'use strict'
- // 定义脚手架的文件路径
+ // 定义模板的文件路径
 process.env.NODE_PATH = __dirname + '/../node_modules/'
 
 const program = require('commander')
@@ -14,7 +14,7 @@ program
     .usage('<command>')
 program
     .command('add')
-    .description('添加脚手架')
+    .description('添加模板')
   .alias('a')
   .action(() => {
     require('../command/add')()
@@ -22,7 +22,7 @@ program
 
 program
     .command('list')
-    .description('脚手架列表')
+    .description('模板列表')
     .alias('l')
     .action(() => {
         require('../command/list')()
@@ -30,7 +30,7 @@ program
 
 program
     .command('init')
-    .description('初始化脚手架')
+    .description('初始化模板')
   .alias('i')
   .action(() => {
     require('../command/init')()
@@ -38,7 +38,7 @@ program
 
 program
     .command('del')
-    .description('删除脚手架')
+    .description('删除模板')
     .alias('d')
     .action(() => {
         require('../command/del')()
