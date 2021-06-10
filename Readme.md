@@ -24,7 +24,7 @@ waga init
 - 2，安装后，需要waga add配置模板信息
 - 3，模板信息配置成功后，可waga init初始化模板创建项目
 - 4，模板可为空，通过waga list可查看，waga del可删除
-- 附：所谓的模板就是脚手架中的开发配置和环境，需要根据自己的需求去上传git，实现脚手架的健全
+- 附：模板即脚手架中要用到的工具、环境和配置，需要根据自己的需求去上传git，实现脚手架的健全
 
 ### 详情可参考如下
 ![Image text](https://raw.githubusercontent.com/please512/waga-cli/master/pic1.png)
